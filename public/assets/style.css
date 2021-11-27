@@ -1,0 +1,380 @@
+/* the :root selects the root of the document
+    <html> in the case of a html file*/
+:root {
+    --primary-color: #0F9D58;
+    --background-color: #f0f3f7;
+    --secon-color: #9da2ad;
+    --grey: #7a7a7b;
+    --white: #ffffff;
+}
+
+/* references everything in the doc*/
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+/* References links*/
+a {
+    color: unset;
+    text-decoration: none;
+
+}
+
+body, html {
+background-color: var(--background-color);
+scroll-behavior: smooth;
+position: relative;
+overflow-x: hidden;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: var(--background-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px, 2px, 8px, 0px;
+}
+
+.menu-wrap {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight:800 ;
+    color: var(--primary-color);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item {
+    margin-left: 1rem;
+    padding: .5rem 1.5rem;
+    font-weight: 600;
+    color: var(--grey);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.menu-item:hover, .menu-item.active {
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+}
+
+.cart-btn {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.cart-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 1rem;
+}
+
+/* Order Button*/
+button {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+
+
+.slogan p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(10, 10, 10);
+}
+
+/*  About us heading*/
+.aboutusheading {
+    font-size: 70px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+
+/* The About Us horizontal line*/
+hr {
+    height: 6px;
+    border: none;
+    background-color: var(--primary-color);
+}
+
+.fullheight {
+    height: 100vh;
+
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.bg-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.bg-img-fixed {
+    background-image: fixed;
+}
+
+.container {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    
+}
+
+section {
+    padding: 9rem;
+}
+
+.slogan {
+    text-align: left;
+}
+
+.slogan h1 {
+    font-size: 7rem;
+    color: var(--primary-color);
+}
+
+.slogan button {
+    padding: 1rem 5rem;
+    outline: none;
+    border: none;
+    background-color: var(--background-color);
+    border: .125rem solid var(--primary-color);
+    border-radius: 2rem;
+    color: 3rem 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+
+.slogan button:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+#about img {
+    border-radius: 2rem;
+    box-shadow: (17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px,
+    rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.about-slogan {
+    padding: 4rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    transform: translateX(-10rem) ;
+}
+
+.about-slogan h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--grey);
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+
+/* The Grid System*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.SelectionGrid {
+   
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.0fr 1.0fr 1.0fr 1.0fr;
+    grid-gap: 0.4rem;
+    max-width: 1366px;
+    
+}
+
+.SelectionGrid img {
+    border-radius: 2rem;
+}
+[class *= "col-"] {
+    padding: 0.2rem;
+    
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50.0%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.Contactus {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.Contactus h1 {
+    text-align: center;
+    color: black;
+    
+}
+
+.Contactus .contactgrid {
+    
+    display: grid;
+    height: 40vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.0fr 1.0fr 1.0fr 1.0fr;
+    grid-gap: 2rem;
+}
+
+.contactgrid button {
+    border: none;
+    border-radius: 1rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 4rem;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.contacttext {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+/*
+Styling for the order page 
+*/
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 30px;
+    grid-row-gap: 0.4rem;
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit:cover ;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 1rem;
+}
+
+.item img:hover {
+    transform: scale(1.04);
+}
+
+.item h4 {
+    padding: 5px;
+    text-align: center;
+}
+
+.item #order {
+    padding: 5px 30px;
+    border: none;
+ 
+    background-color: var(--primary-color);
+    color: black;
+    cursor:pointer ;
+    border-radius: 1rem;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    transition: 0.2s all;
+
+}
+
+.item button:hover {
+    transform: scale(1.08);
+}
