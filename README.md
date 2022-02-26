@@ -1,3 +1,11 @@
+# Configuring Authentication system for use
+In order for you to use this authentication system or include it in your project, kindly follow the steps below;
+
+- Import the database (codeigniter_authentication.sql) to your phpmyAdmin or any other mysql server. The database file to be imported is in the root folder
+
+- Configure the .env file found in the root folder in accordance to your server. You will need to set the database port, name, and password in accordance to your              local machine's configuration
+
+
 # CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
